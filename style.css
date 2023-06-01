@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=PT+Sans+Caption:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(216, 214, 214);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    row-gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+header{
+    display: grid;
+    place-content: center;
+    padding: 30px;
+    width: 100%;
+    background: linear-gradient(180deg,#e5dda6, #ECDA5F);
+
+}
+.container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 40px;
+
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    height: 390px;
+    width: 260px;
+    background: linear-gradient(180deg, #5055F2, #9194e7);
+}
+.image:hover{
+    transition: scale 0.2s ease;
+    scale: 110%;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.107);
+}
+.image img{
+    margin-top: 20px;
+    height: 60%;
+    width: 100%;
+}
+.id{
+    padding-top: 20px;
+}
+.name{
+    margin-top: 30px;
+    color: black;
+    background-color: #54E86C;
+    padding:10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.botones{
+    margin-top: 20px;
+    display: flex;
+    column-gap: 30px;
+}
+.boton{
+    text-align: center;
+    border: 0;
+    background: linear-gradient(-45deg, #ECDA5F, #f5da25);
+    padding: 15px;
+    border-radius: 20px;
+    width: 100px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+.boton:hover{
+    transition: background 0.6s ease;
+    background: black;
+    color: white;
+    cursor: pointer; 
+}
+.boton img{
+    width: 20px;
+}
+.flecha1{
+    transform: rotate(-180deg);
+}
+.boton:hover > .flecha2, .boton:hover > .flecha1{
+    filter: contrast(0%);
+}
